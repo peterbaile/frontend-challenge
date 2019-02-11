@@ -24,13 +24,13 @@ src/                       Where the JS logic is
     Nav.js                 Basic component for the navbar
     SearchBar.js           Additional component for filtering courses
 
-  data/                Contains data rendered by the components
-    courses.json       Contains information on CIS courses at Penn
+  data/                    Contains data rendered by the components
+    courses.json           Contains information on CIS courses at Penn
 
 
-  App.css              CSS for the app
-  App.js               Root component for the app
-  index.js             Renders the React app
+  App.css                  CSS for the app
+  App.js                   Root component for the app
+  index.js                 Renders the React app
   ...
 ```
 
