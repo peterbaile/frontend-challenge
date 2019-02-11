@@ -4,6 +4,7 @@
 
 * `cd` to the `local` directory
 *  Run `sh deploy.sh` to start the React App
+*  Please use Chrome to enable optimal user experience
 
 --------------------
 
