@@ -1,0 +1,90 @@
+.Nav{
+    display: inline-block;
+    margin-left: 3.1%;
+}
+
+#left{
+    font-size: 3em;
+  color: #FBFCFC
+}
+
+.CoursesDiv{
+    margin-bottom: 2%;
+}
+
+.Courses{
+    display: inline-block;
+} 
+
+#courses{
+    width: 60%;
+    margin-left: 3.1%;
+    height: 700px;
+    overflow: scroll;
+}
+
+#wrapperCourseButton:hover{
+    background: #D6EAF8;
+}
+
+#description{
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 28%;
+    height: 700px;
+    overflow: scroll;
+}
+
+#right{
+    float: right;
+    margin-left: 2%;
+}
+
+#right-cart{
+    float: right;
+    margin-right: 10%;
+}
+
+
+#remove-checkout{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#remove-checkout:hover{
+    color: #566573;
+}
+
+.Courses-checkout{
+    position: relative;
+    margin: 2%;
+} 
+
+#minusCourseButton:hover{
+    background-color: #3498DB;
+    /* color: black; */
+}
+
+#addCourseButton:hover:not([disabled]){
+    background-color: #3498DB;
+    /* color: black; */
+}
+
+#addCourseButton:disabled{
+    background-color:#D4E6F1;
+    cursor: default;
+}
+
+input[type="text"]{
+    margin-left: 1%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#limit-label{
+    margin-left: 3.1%;
+    margin-top: 2%;
+}

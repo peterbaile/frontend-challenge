@@ -1,24 +1,23 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import Nav from './components/Nav'
-import Courses from './components/Courses'
-import Cart from './components/Cart'
+import HomeComponent from './components/HomeComponent';
+import CheckOutComponent from './components/CheckOutComponent';
+
+import { HashRouter, Route, Switch} from 'react-router-dom';
+
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 class App extends Component {
   render() {
+    
     return (
-      <>
-        <Nav />
-        <div style={{
-          width: '100%',
-          boxSizing: 'border-box',
-          padding: '0 calc(1rem + 10%)',
-        }}>
-          <Courses />
-          <Cart />
-        </div>
-      </>
+      <HashRouter>
+        <Switch>
+          <Route exact path='/cart' component={CheckOutComponent}/>
+          <Route exact path='/' component={HomeComponent}/>
+        </Switch>
+      </HashRouter>
     );
   }
 }
