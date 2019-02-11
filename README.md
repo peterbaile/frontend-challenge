@@ -60,15 +60,15 @@ src/                       Where the JS logic is
   * User can remove a course by clicking the __x__ button and corresponding changes will be reflected immediately
   * At the bottom of the page, the user can either check-out or return to the home page to continue their course selection
     * `Go back to Course Selection` button enables user to return to home page
-    * `Confirm` button will return "sucess" if the number of courses chosen is smaller or equal to 7. If there is no courses chosen, the user will be redirected to home page to choose more course.
+    * `Confirm` button will return "sucess" if the number of courses chosen is smaller than or equal to 7. If there is no course chosen, the user will be redirected to home page to choose more courses.
 
 4. __The Persistency of Data__
   * The list of courses present in the cart is stored in `Local Storage`. Therefore, even after refreshing the page, the list of courses that the user selects will still be kept.
-    * It is normal if you see some greyed-out "add" buttons even after refresh. This is because your preference list consisted of the 7 courses is stored and the "add" buttons are disabled intentionally.
+    * It is normal if you see some greyed-out "add" buttons after refreshing. This is because your preference list consisted of the 7 courses is stored and the "add" buttons are disabled intentionally.
 
 5. __In-place Modification__
-  * Any modification on course will be reflected in the page without actually having to refresh the page.
-    * To achieve this, `React lifecyle Methods` are used, such as `componentDidMount()`
+  * Any modification will be reflected in the page without having to refresh.
+    * To achieve this, `React lifecyle Methods` are used, such as `componentDidMount()`, to repeatedly render the page after state change
 
 6. __Intuitive Interface__
   * With the apparent color changes on hover and easy-to-follow icons, this web is easy to use. 
